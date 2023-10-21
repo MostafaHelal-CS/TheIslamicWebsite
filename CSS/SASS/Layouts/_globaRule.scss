@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+    @include prefixers(box-sizing , border-box  ,webkit moz);
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #b2dbfb;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    @media #{$minSmallScreem} {
+        width: 750px;
+    }
+
+    @media #{$minMediumScreem} {
+        width: 970px;
+    }
+
+    @media #{$minLargeScreem} {
+        width: 1170px;
+    }
+}
+
